@@ -1,0 +1,12 @@
+.navigation{
+    margin: 0 auto;
+    background-color: blue;
+}
+ul{
+    text-align: left;
+}
+li{
+    display: inline-block;
+    margin-left: 25px;
+    cursor: pointer;
+}
