@@ -5,7 +5,7 @@ import Offer from '../pages/Offer';
 import Opinions from '../pages/Opinions';
 import Client from '../pages/Client';
 import Contact from '../pages/Contact';
-import { BrowserRouter as Router, Link, Route } from 'react-router-dom';
+import { BrowserRouter as Router, NavLink, Route } from 'react-router-dom';
 
 import '../style/Navigation.css';
 
@@ -17,16 +17,16 @@ const Navigation = () => {
             <div className="main">
                 <nav className="link">
                     <ul>
-                        <li><Link to="/">Start</Link></li>
-                        <li><Link to="/ofert">Oferta</Link></li>
-                        <li><Link to="/opinions">Opinie</Link></li>
-                        <li><Link to="/client">Strefa klienta</Link></li>
-                        <li><Link to="/contact">Kontakt</Link></li>
+                        <li><NavLink to="/" exact>Start</NavLink></li>
+                        <li><NavLink to="/ofert">Oferta</NavLink></li>
+                        <li><NavLink to="/opinions">Opinie</NavLink></li>
+                        <li><NavLink to="/client">Strefa klienta</NavLink></li>
+                        <li><NavLink to="/contact">Kontakt</NavLink></li>
                         <div className="clock"><Clock /></div>
                     </ul>
                 </nav>
                 <section className="content">
-                    <Route path="/" component={HomePage} />
+                    <Route path="/" exact component={HomePage} />
                     <Route path="/ofert" component={Offer} />
                     <Route path="/opinions" component={Opinions} />
                     <Route path="/client" component={Client} />

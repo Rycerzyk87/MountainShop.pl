@@ -20,16 +20,23 @@ ul{
 li{
     
     height: 7vh;
-    padding-left: 1vw;
+    padding-left: 5px;
     cursor: pointer;
     font-size: 150%;
+    
+}
+a{
+    text-decoration: none;
+    padding-left: 10px;
+    text-transform: uppercase;
+    font-weight: 700;
 }
 li:hover{
     transform: translateX(20px);
 }
-li:active{
+.active{
     color: white;
-    border-left: 10px red solid;
+    border-left: 8px red solid;
 }
 .clock{
     margin-top: 5vh;
