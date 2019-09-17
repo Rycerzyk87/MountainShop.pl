@@ -10,7 +10,7 @@ const Navigation = () => {
         <nav className="main">
             <ul>
                 <li>Start</li>
-                <li>Produkty</li>
+                <li>Oferta</li>
                 <li>Opinie</li>
                 <li>Strefa klienta</li>
                 <li>Kontakt</li>

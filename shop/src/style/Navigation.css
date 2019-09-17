@@ -1,19 +1,19 @@
 .navigation{
     width: 25%;
     margin: 0 auto;
-    background-color: blue;
     text-align: center;
+   
 }
 ul{
     list-style: none;
     text-align: center;
     margin: 1vh auto;
-    background-color: blueviolet;
 }
 li{
-    padding: 0;
-    height: 5vh;
+    
+    height: 7vh;
     cursor: pointer;
+    font-size: 150%;
 }
 .clock{
     margin-top: 5vh;
