@@ -12,8 +12,16 @@ ul{
 li{
     
     height: 7vh;
+    padding-left: 1vw;
     cursor: pointer;
     font-size: 150%;
+}
+li:hover{
+    transform: translateX(20px);
+}
+li:active{
+    color: white;
+    border-left: 10px red solid;
 }
 .clock{
     margin-top: 5vh;

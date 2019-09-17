@@ -14,7 +14,7 @@ const Navigation = () => {
                 <li>Opinie</li>
                 <li>Strefa klienta</li>
                 <li>Kontakt</li>
-                <li className="clock"><Clock /></li>
+                <div className="clock"><Clock /></div>
             </ul>
 
         </nav>

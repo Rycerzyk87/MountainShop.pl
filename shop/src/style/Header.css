@@ -1,5 +1,8 @@
 .header{
-    height: 25vh;
+    position: relative;
+    height: 40vh;
     width: 100%;
-    background-color: red;
+    background-image: url("../images/mountainrock.jpg");
+    bottom: 0;
+
 }
