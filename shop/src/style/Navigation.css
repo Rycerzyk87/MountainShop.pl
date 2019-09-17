@@ -1,12 +1,20 @@
-.navigation{
+.main{
+    display: flex;
+}
+.link{
     width: 25%;
     margin: 0 auto;
     text-align: center;
-   
-}
+   }
+.content{
+    width: 70%;
+    margin: 0 auto;
+    text-align: center;
+}   
+
 ul{
     list-style: none;
-    text-align: center;
+    text-align: left;
     margin: 1vh auto;
 }
 li{
