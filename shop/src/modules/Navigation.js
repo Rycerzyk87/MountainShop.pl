@@ -9,7 +9,22 @@ import { BrowserRouter as Router, NavLink, Route } from 'react-router-dom';
 
 import '../style/Navigation.css';
 
+const list = [
+    { name: "start", path: "/", exact: true },
+    { name: "Oferta", path: "/ofert" },
+    { name: "Opinie", path: "/opinions" },
+    { name: "Strefa klienta", path: "/client" },
+    { name: "Kontakt", path: "/contact" },
+]
+
+
 const Navigation = () => {
+
+    const menuList = list.map(item => (
+        <li key={item.name}>
+            <NavLink to={item.path} exact={item.exact ? item.exact : false}>{item.name}</NavLink>
+        </li>
+    ))
 
     return (
 
@@ -17,11 +32,7 @@ const Navigation = () => {
             <div className="main">
                 <nav className="link">
                     <ul>
-                        <li><NavLink to="/" exact>Start</NavLink></li>
-                        <li><NavLink to="/ofert">Oferta</NavLink></li>
-                        <li><NavLink to="/opinions">Opinie</NavLink></li>
-                        <li><NavLink to="/client">Strefa klienta</NavLink></li>
-                        <li><NavLink to="/contact">Kontakt</NavLink></li>
+                        {menuList}
                         <div className="clock"><Clock /></div>
                     </ul>
                 </nav>
