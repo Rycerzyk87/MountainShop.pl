@@ -1,21 +1,23 @@
 import React from 'react';
 
-const cityList = ['zakopane', "ustroń", "wisła", "krynica-zdrój"];
+const cityList = [{ name: 'Katmandu', eng: 'Kathmandu' }, { name: 'Elbrus', eng: 'Elbrus' }, { name: 'Chamonix', eng: 'Chamonix-mont-blanc' },
+{ name: 'Saint Helens', eng: 'Saint Helens' }, { name: 'Esmeralda', eng: 'Esmeralda' }, { name: 'Tarnowskie Góry', eng: 'Tarnowskie Góry' }];
 const cityOptions = cityList.map(city => (
-    <option>{city}</option>
+    <option key={city.name} value={city.eng}>{city.name}</option>
 ))
 
 class Offer extends React.Component {
+
     state = {
         city: "",
         weather: [],
+        temp: "",
+        press: "",
+        wind: "",
+
         key: "99c6651300a41971c7dd60f651d33589",
     }
-    // cityOptions = () => {
-    //     cityList.map(item => (
-    //         <option>{item}</option>
-    //     ))
-    // }
+
     getWeather = () => {
 
         const proxyUrl = 'https://cors-anywhere.herokuapp.com/';
@@ -27,24 +29,37 @@ class Offer extends React.Component {
             .then(data => {
                 console.log(data);
                 this.setState({
-                    data: data
+                    weather: data,
+                    temp: Math.floor(data.main.temp / 31),
+                    press: data.main.pressure,
+                    wind: data.wind.speed,
                 })
 
             }
             );
     };
-
-    componentDidMount() {
+    // componentDidMount() {
+    //     this.getWeather();
+    // }
+    componentDidUpdate() {
         this.getWeather();
     }
-    render() {
 
+    render() {
+        // zrobić ifa czy city === ""
         return (
             <div>
-                <select>
+                <span>Wybierz cel swojej wyprawy: </span>
+                <select onChange={(e) => this.setState({ city: e.target.value })}>
                     {cityOptions}
                 </select>
-            </div>
+
+                <div className="weather">
+                    <p>Bieżące warunki pogodowe:</p>
+                    <span>Tempertura : <b>{this.state.temp}</b> &#8451;  Ciśnienie atmosferyczne: <b>{this.state.press}</b> hPa Siła wiatru: <b>{this.state.wind}</b> m/s</span>
+
+                </div>
+            </div >
         );
     }
 }
