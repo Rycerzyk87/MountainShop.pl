@@ -1,15 +1,15 @@
 import React from 'react';
 
 const cityList = [
-    { name: 'Katmandu', eng: 'Kathmandu', description: "katma", },
-    { name: 'Elbrus', eng: 'Elbrus', description: "elbrus" },
-    { name: 'Chamonix', eng: 'Chamonix-mont-blanc', description: "chamoni" },
-    { name: 'Saint Helens', eng: 'Saint Helens', description: "saint" },
-    { name: 'Esmeralda', eng: 'Esmeralda', description: "esmeralda" },
-    { name: 'Tarnowskie Góry', eng: 'Tarnowskie Góry', description: "tarnowskie" }];
+    { name: 'Katmandu', eng: 'Kathmandu', description: "katma", data: { a: 1, b: 2, c: 3, d: 4, e: 4 } },
+    { name: 'Elbrus', eng: 'Elbrus', description: "elbrus", data: { a: 1, b: 2, c: 3, d: 4, e: 4 } },
+    { name: 'Chamonix', eng: 'Chamonix-mont-blanc', description: "chamoni", data: { a: 1, b: 2, c: 3, d: 4, e: 4 } },
+    { name: 'Saint Helens', eng: 'Saint Helens', description: "saint", data: { a: 1, b: 2, c: 3, d: 4, e: 4 } },
+    { name: 'Esmeralda', eng: 'Esmeralda', description: "esmeralda", data: { a: 1, b: 2, c: 3, d: 4, e: 4 } },
+    { name: 'Tarnowskie Góry', eng: 'Tarnowskie Góry', description: "tarnowskie", data: { a: 1, b: 2, c: 3, d: 4, e: 4 } }];
 
 const cityOptions = cityList.map(city => (
-    <option key={city.name} value={city.eng} description={city.description}>{city.name}</option>
+    <option key={city.name} value={city.eng} data={city}>{city.name}</option>
 ))
 
 class Offer extends React.Component {
@@ -20,6 +20,7 @@ class Offer extends React.Component {
         press: "",
         wind: "",
         description: "",
+        cityData: {},
 
         key: "99c6651300a41971c7dd60f651d33589",
     }
@@ -57,7 +58,7 @@ class Offer extends React.Component {
                 <span>Cel wyprawy: </span>
                 <select onChange={(e) => this.setState({
                     city: e.target.value,
-                    description: e.target.description,
+                    cityData: e.target.data,
                 })}>
                     {cityOptions}
                 </select>
@@ -65,7 +66,7 @@ class Offer extends React.Component {
                     <div className="weather">
                         <p>Bieżące warunki pogodowe:</p>
                         <span>Tempertura : <b>{this.state.temp}</b> &#8451;  Ciśnienie atmosferyczne: <b>{this.state.press}</b> hPa Siła wiatru: <b>{this.state.wind}</b> m/s</span>
-                        <p>{this.state.description}</p>
+                        {/* <p>{this.state.description}</p> opis zrobic */}
                     </div> :
                     <div className="chooseCity">
                         Wybierz cel swojej wyprawy!!!
