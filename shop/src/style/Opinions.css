@@ -1,0 +1,26 @@
+.opinion{
+    margin: 2% auto;
+    padding: 1%;
+    text-align: center;
+    border: 0.5px solid blue;
+}
+p.note{
+    text-align: right;
+    margin-right: 6%;
+    text-transform: uppercase; 
+}
+.note span{
+    font-weight: bold;
+    font-size: 150%; 
+
+}
+.text{
+    text-transform: uppercase;
+
+}
+p.date{
+font-size: 80%;
+}
+p.name{
+    font-weight: bold;
+}
