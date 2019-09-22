@@ -5,7 +5,7 @@ import OpinionsList from '../modules/OpinionsList';
 
 class Opinions extends React.Component {
     state = {
-        opinie: [
+        opinions: [
             {
                 text: "lorem sdlkn sdlkn kmd ndm dfjnsdjfsnkd",
                 name: "adnrzej",
@@ -26,8 +26,9 @@ class Opinions extends React.Component {
     render() {
         return (
             <div className="opinions">
-                <OpinionsList opinie={this.state.opinie} />
                 <AddOpinions />
+                <OpinionsList opinions={this.state.opinions} />
+
             </div>
         );
     }

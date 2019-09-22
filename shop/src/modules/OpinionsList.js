@@ -3,13 +3,13 @@ import Opinion from './Opinion';
 
 
 const OpinionsList = (props) => {
-    const list = props.opinie.map(op => <Opinion key={opinie.name} />)
+    const list = props.opinions.map(opinion => <Opinion opinion={opinion} />)
     return (
         <div className="opinions">
             <h1>Opinie naszych klientów:</h1>
             <ul>
-                {list}
 
+                {list}
             </ul>
         </div>
     );
