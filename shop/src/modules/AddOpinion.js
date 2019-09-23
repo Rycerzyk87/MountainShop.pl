@@ -12,10 +12,10 @@ class AddOpinions extends React.Component {
             [event.target.name]: event.target.value,
         });
     }
-    handleClick(props) {
-        // this.preventDefault()
+    handleClick = (event) => {
+        event.preventDefault()
         console.log("działam z adopinion");
-        this.addOpition()
+        this.props.add()
     }
     render() {
         return (
@@ -26,7 +26,7 @@ class AddOpinions extends React.Component {
                     <input type="text" placeholder="twoje imię" value={this.state.name} name="name" onChange={e => this.handleChange(e)}></input>
                     <input type="text" placeholder="twoja ocena 0-5" value={this.state.note} name="note" onChange={e => this.handleChange(e)}></input>
                     <input type="text" placeholder="data wyjazdu" value={this.state.stayDate} name="stayDate" onChange={e => this.handleChange(e)}></input><br />
-                    <button onChange={this.handleClick}>Wyślij opinię</button>
+                    <button onClick={this.handleClick}>Wyślij opinię</button>
                 </form>
             </div>
         );

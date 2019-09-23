@@ -42,13 +42,14 @@ class Opinions extends React.Component {
             }
         ],
     }
-    addOpition() {
+    addOpition = () => {
         console.log("działam z opinions.js");
+        return true
     }
     render() {
         return (
             <div className="opinions">
-                <AddOpinions />
+                <AddOpinions add={this.addOpition} />
                 <OpinionsList opinions={this.state.opinions} />
 
             </div>
