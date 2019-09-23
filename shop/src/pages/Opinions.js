@@ -42,6 +42,9 @@ class Opinions extends React.Component {
             }
         ],
     }
+    addOpition() {
+        console.log("działam z opinions.js");
+    }
     render() {
         return (
             <div className="opinions">
