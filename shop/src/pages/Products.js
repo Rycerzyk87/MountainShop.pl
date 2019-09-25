@@ -1,5 +1,5 @@
 import React from 'react';
-import Product from '../modules/Product';
+import ProductList from '../modules/ProductList';
 
 
 class Products extends React.Component {
@@ -33,24 +33,20 @@ class Products extends React.Component {
         products: [],
 
     }
-    addProducts = () => {
-        const product = {
+    // addProducts = () => {
+    //     const product = {
 
-        }
-        this.setState(prevState => ({
-            products: [...prevState.products, product]
-        }))
-        return true
-    }
-    ProductList() {
-        this.state.offers.map(offer => <Product key={offer.name} offer={offer} />)
-    }
+    //     }
+    //     this.setState(prevState => ({
+    //         products: [...prevState.products, product]
+    //     }))
+    //     return true
+    // }
+
     render() {
         return (
             <div className="products">
-                <ul>
-                    {this.ProductList}
-                </ul>
+                <ProductList offers={this.state.offers} products={this.state.products} />
 
             </div>
         );
