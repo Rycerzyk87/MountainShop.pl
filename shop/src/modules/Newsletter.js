@@ -43,9 +43,10 @@ class Newsletter extends React.Component {
         return (
             <div className={this.state.class} style={{ bottom: `${this.state.time}` }}>
                 <form>
-                    <p>Zapisz się do naszego Newslettera aby dowiedzieć się o najnowszzych promocjach!</p>
+                    <p>Zapisz się do naszego Newslettera aby dowiedzieć się o najnowszych promocjach!</p>
                     <button className="close" onClick={this.handleCloseClick}>X</button>
                     <input placeholder="Twój adres mailowy" value={this.state.mail} onChange={this.handleChangeMail}></input>
+                    {/* zrobić walidację */}
                 </form>
                 <button onClick={this.handleSubmit}>Zapisz</button>
             </div>
