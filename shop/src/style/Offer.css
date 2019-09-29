@@ -1,9 +1,17 @@
+span.select{
+    display: inline-block;
+    margin-top: 5%;
+}
+.chooseCity{
+    font-size: 200%;
+}
 .description{
 text-align: justify;
 }
 .foto{
+    overflow: hidden;
     margin: 5% auto;
     width: 90%;
-    height: 40vh;
+    height: 58vh;
     background-color: blue;
 }
