@@ -1,9 +1,7 @@
 div.join{
-    /* display: none; */
     position: fixed;
     width: 500px;
     height: 120px;
-    /* bottom: 0; */
     left: 50%;
     transform: translate(-50%, -50%);
     padding: 10px;
@@ -13,7 +11,7 @@ div.join{
 
 }
 .none{
-    display: 
+    display: none;
 }
 .join input{
     padding: 2px;
