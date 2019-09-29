@@ -1,0 +1,9 @@
+.description{
+text-align: justify;
+}
+.foto{
+    margin: 5% auto;
+    width: 90%;
+    height: 40vh;
+    background-color: blue;
+}
