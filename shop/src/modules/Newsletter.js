@@ -36,9 +36,9 @@ class Newsletter extends React.Component {
             class: "none",
         })
     }
-    componentDidMount() {
-        this.positionChange();
-    }
+    // componentDidMount() {
+    //     this.positionChange();
+    // }
     render() {
         return (
             <div className={this.state.class} style={{ bottom: `${this.state.time}` }}>
