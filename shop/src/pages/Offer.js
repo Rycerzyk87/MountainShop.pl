@@ -1,15 +1,15 @@
 import React from 'react';
 
 const cityList = [
-    { name: 'Katmandu', eng: 'Kathmandu', description: "katma" },
-    { name: 'Elbrus', eng: 'Elbrus', description: "elbrus" },
-    { name: 'Chamonix', eng: 'Chamoni', description: "chamoni" },
-    { name: 'Saint Helens', eng: 'Saint Helens', description: "saint" },
-    { name: 'Esmeralda', eng: 'Esmeralda', description: "esmeralda" },
-    { name: 'Tarnowskie Góry', eng: 'Tarnowskie Góry', description: "tarnowskie" }];
+    { name: 'Katmandu', eng: 'Kathmandu', description: "katma asa asdas asdas" },
+    { name: 'Elbrus', eng: 'Elbrus', description: "elbru asdas asdas asds" },
+    { name: 'Chamonix', eng: 'Chamonix-Mont-Blanc', description: "chamoni asdas asas" },
+    { name: 'Saint Helens', eng: 'Saint Helens', description: "saint asdasdasdasd" },
+    { name: 'Esmeralda', eng: 'Esmeralda', description: "esmeralda asdasds " },
+    { name: 'Tarnowskie Góry', eng: 'Tarnowskie Góry', description: "tarnowskiea asdas asdas" }];
 
 const cityOptions = cityList.map(city => (
-    <option key={city.name} value={city.description} >{city.name}</option>
+    <option key={city.name} value={city.eng} >{city.name}</option>
 ))
 
 class Offer extends React.Component {
@@ -66,7 +66,7 @@ class Offer extends React.Component {
                 <span>Cel wyprawy: </span>
                 <select onChange={(e) => this.setState({
                     city: e.target.value,
-                    cityData: e.target.data,
+                    description: e.target.description,
                 })}>
                     {cityOptions}
                 </select>
@@ -74,7 +74,7 @@ class Offer extends React.Component {
                     <div className="weather">
                         <p>Bieżące warunki pogodowe:</p>
                         <span>Tempertura : <b>{this.state.temp}</b> &#8451;  Ciśnienie atmosferyczne: <b>{this.state.press}</b> hPa Siła wiatru: <b>{this.state.wind}</b> m/s</span>
-
+                        <p>{this.state.description}</p>
                     </div> :
                     <div className="chooseCity">
                         Wybierz cel swojej wyprawy!!!
