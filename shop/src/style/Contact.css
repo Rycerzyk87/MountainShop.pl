@@ -1,0 +1,14 @@
+.contact textarea {
+    font-size: 150%;
+    width: 80%;
+    min-height: 160px;
+    /* margin: 20px 0; */
+    line-height: 1.6;
+    font-family: 'open sans', arial, sans-serif;
+}
+.contact input{
+    font-size: 150%;
+    margin: 20px 0;
+    line-height: 1.6;
+    padding-left: 0;
+}

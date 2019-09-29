@@ -1,11 +1,48 @@
 import React from 'react';
+import { Prompt } from 'react-router-dom';
 
+import '../style/Contact.css'
 
+class Contact extends React.Component {
+    state = {
+        value: "",
+        valueMail: ""
+    }
+    handleChange = (e) => {
+        this.setState({
+            value: e.target.value
+        })
+    }
+    handleChangeMail = (e) => {
+        this.setState({
+            valueMail: e.target.value
+        })
+    }
 
-const Contact = () => {
-    return (
-        <div className="ontact">Contact</div>
-    );
+    handleSubmit = (e) => {
+        e.preventDefault();
+        this.setState({
+            value: "",
+            valueMail: ""
+
+        })
+    }
+    render() {
+        return (
+            <>
+                <div className="contact">
+                    <form onSubmit={this.handleSubmit}>
+                        <h3>Napisz do nas</h3>
+                        <input value={this.state.valueMail} onChange={this.handleChangeMail} placeholder="Twój adres mailowy"></input>
+
+                        <textarea value={this.state.value} onChange={this.handleChange} placeholder="Zostaw nam wiadomość"></textarea>
+                        <button on>Wyślij</button>
+                    </form>
+                    <Prompt when={this.state.value} message="Wiadomość nie została wysłana, czy chcesz opuścić stronę?" />
+                </div>
+            </>
+        );
+    }
 }
 
 export default Contact;

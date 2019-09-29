@@ -15,7 +15,7 @@ class Newsletter extends React.Component {
             this.setState({
                 time: 1 + "px"
             })
-        }, 4000);
+        }, 10000);
     }
     handleChangeMail = (e) => {
         this.setState({
@@ -36,9 +36,9 @@ class Newsletter extends React.Component {
             class: "none",
         })
     }
-    // componentDidMount() {
-    //     this.positionChange();
-    // }
+    componentDidMount() {
+        this.positionChange();
+    }
     render() {
         return (
             <div className={this.state.class} style={{ bottom: `${this.state.time}` }}>

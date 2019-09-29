@@ -4,14 +4,33 @@ span.select{
 }
 .chooseCity{
     font-size: 200%;
+    margin-top: 20vh;
 }
 .description{
 text-align: justify;
 }
 .foto{
     overflow: hidden;
+    image-orientation: initial;
     margin: 5% auto;
     width: 90%;
     height: 58vh;
     background-color: blue;
+}
+.select{
+    font-size: 150%;
+}
+select {
+        margin-left: 2vw;
+        font-size: 150%;
+}
+.contactWithUs{
+    position: fixed;
+    top: 30%;
+    right: 5%;
+    padding: 1%;
+    cursor: pointer;
+    background-color: aliceblue;
+    border: 1px solid grey
+
 }
