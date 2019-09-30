@@ -32,7 +32,7 @@ class Contact extends React.Component {
             <>
                 <div className="contact">
                     <form onSubmit={this.handleSubmit}>
-                        <h3>Napisz do nas</h3>
+                        <h3>Napisz do nas!</h3>
                         <input value={this.state.valueMail} onChange={this.handleChangeMail} placeholder="Twój adres mailowy"></input>
 
                         <textarea value={this.state.value} onChange={this.handleChange} placeholder="Zostaw nam wiadomość"></textarea>

@@ -1,7 +1,5 @@
 import React from 'react';
-import { BrowserRouter as Router, NavLink, Route } from 'react-router-dom';
 import '../style/Offer.css'
-import Contact from '../pages/Contact';
 
 import foto1 from '../images/katmandu.jpg';
 import foto2 from '../images/elbrus.jpg';
@@ -77,13 +75,14 @@ class Offer extends React.Component {
                     <div className="weather">
                         <p>Bieżące warunki pogodowe:</p>
                         <span>Tempertura : <b>{this.state.temp}</b> &#8451;  Ciśnienie atmosferyczne: <b>{this.state.press}</b> hPa Siła wiatru: <b>{this.state.wind}</b> m/s</span>
-                    </div> :
+                        <a href="http://localhost:3000/contact" className={this.state.class}><button className="close" onClick={this.handleCloseClick}>x</button><p>Chcesz więcej?</p><p>Napisz do nas.</p>
+                     </a>
+                    </div> 
+                    :
                     <div className="chooseCity">
                         Wybierz cel swojej wyprawy!!!
                     </div>
                 }
-                <a href="http://localhost:3000/contact" className={this.state.class}><button className="close" onClick={this.handleCloseClick}>x</button><p>Chcesz więcej?</p><p>Napisz do nas.</p>
-                </a>
                 
                 <div className="description">
                      {this.state.city === "Kathmandu" ? <div><div className="foto"><img src={foto1} alt="Temple"></img></div><p>Katmandu to stolica i największe miasto Nepalu – mieszka w nim około miliona osób. Dolina Katmandu ucierpiała w trzęsieniu ziemi w 2015 roku i do tej pory na każdym kroku widać jego ślady. Na pierwszy rzut oka Katmandu to miasto, z którego powinno się uciekać, ale tak nie jest. Katmandu pomimo wszystko urzeka. Męczy, ale fascynuje. Jest w tym mieście coś magicznego, magnetyzującego. W Dolinie Katmandu znajdują się trzy królewskie miasta Katmandu, Patan i Bhaktapur – każde z nich ma swój Durbar Square i wszystkie trzy place znajdują się obecnie na liście UNESCO. Trudno powiedzieć, który z nich jest najpiękniejszy – wydaje mi się, że każdy jest wart odwiedzenia. Niestety wiele świątyń zostało kompletnie zniszczonych podczas trzęsienia ziemi w 2015 roku. Oczywiście oprócz tej mistycznej strony jest i druga strona medalu – wokół stupy kwitnie w najlepsze biznes pamiątkarski, jednak zdecydowanie jest w tle, nie irytuje. Jeśli tam będziecie skręćcie w wąską uliczkę z prawej strony stupy – jest tam kawiarnia, która ma taras na dachu. Idealne miejsce na odpoczynek i wypicie lassi oraz delektowanie się widokiem stupy i Katmandu. Warto odiwedzić:

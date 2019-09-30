@@ -8,6 +8,8 @@ span.select{
 }
 .description{
 text-align: justify;
+margin-bottom: 10%;
+padding: 1%;
 }
 .foto{
     overflow: hidden;
@@ -26,11 +28,12 @@ select {
 }
 .contactWithUs{
     position: fixed;
-    top: 30%;
+    bottom: 10%;
     right: 5%;
     padding: 1%;
     cursor: pointer;
     background-color: aliceblue;
-    border: 1px solid grey
+    border: 1px solid grey;
+    transition: 2s;
 
 }

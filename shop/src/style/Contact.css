@@ -1,3 +1,10 @@
+.contact{
+    text-align: left;
+}
+.contact h3{
+    margin-left: 50%;
+    transform: translate(-50%, -50%);
+}
 .contact textarea {
     font-size: 150%;
     width: 80%;
