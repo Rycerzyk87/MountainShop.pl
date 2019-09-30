@@ -65,7 +65,7 @@ class Offer extends React.Component {
     }
     render() {
         return (
-         <Router>
+       
             <div>
                 <span className="select">Cel wyprawy: </span>
                 <select onChange={(e) => this.setState({
@@ -82,9 +82,9 @@ class Offer extends React.Component {
                         Wybierz cel swojej wyprawy!!!
                     </div>
                 }
-                <div className={this.state.class}><button className="close" onClick={this.handleCloseClick}>x</button><p>Chcesz więcej?</p><p>Napisz do nas.</p>
-                <NavLink to="./contact">klik</NavLink>
-                <Route path="/contact" component={Contact} /></div>
+                <a href="http://localhost:3000/contact" className={this.state.class}><button className="close" onClick={this.handleCloseClick}>x</button><p>Chcesz więcej?</p><p>Napisz do nas.</p>
+                </a>
+                
                 <div className="description">
                      {this.state.city === "Kathmandu" ? <div><div className="foto"><img src={foto1} alt="Temple"></img></div><p>Katmandu to stolica i największe miasto Nepalu – mieszka w nim około miliona osób. Dolina Katmandu ucierpiała w trzęsieniu ziemi w 2015 roku i do tej pory na każdym kroku widać jego ślady. Na pierwszy rzut oka Katmandu to miasto, z którego powinno się uciekać, ale tak nie jest. Katmandu pomimo wszystko urzeka. Męczy, ale fascynuje. Jest w tym mieście coś magicznego, magnetyzującego. W Dolinie Katmandu znajdują się trzy królewskie miasta Katmandu, Patan i Bhaktapur – każde z nich ma swój Durbar Square i wszystkie trzy place znajdują się obecnie na liście UNESCO. Trudno powiedzieć, który z nich jest najpiękniejszy – wydaje mi się, że każdy jest wart odwiedzenia. Niestety wiele świątyń zostało kompletnie zniszczonych podczas trzęsienia ziemi w 2015 roku. Oczywiście oprócz tej mistycznej strony jest i druga strona medalu – wokół stupy kwitnie w najlepsze biznes pamiątkarski, jednak zdecydowanie jest w tle, nie irytuje. Jeśli tam będziecie skręćcie w wąską uliczkę z prawej strony stupy – jest tam kawiarnia, która ma taras na dachu. Idealne miejsce na odpoczynek i wypicie lassi oraz delektowanie się widokiem stupy i Katmandu. Warto odiwedzić:
                     <br></br>THAMEL – turystyczna dzielnica pełna hoteli, restauracji i sklepów. Bez problemu zakupisz tu pamiątki, używane książki w różnych językach lub zjesz przysmaki z całego świata. Thamel bywa też hałaśliwy i męczący więc na każdym rogu można złapać rikszę lub taksówkę i uciec w spokojniejsze rejony Katmandu.<br></br>INDRA CHOWK –  jest to również dzielnica pełna sklepów, ale miejscowych. Na placu Indra Chowk krzyżuje się sześć ulic. Jest to raczej jeden duży uliczny targ, gdzie można kupić wszystko: od butów, przez pralki, aż do warzyw. Między ulicami pełnymi towarów znajdują się małe kapliczki. Warto odwiedzić, aby zrobić zakupy i zobaczyć codzienne życie miejscowych.<br></br>KATMANDU DURBAR SQUARE – to plac znajdujący się przed starym pałacem królewskim byłego Królestwa Katmandu. Jest jednym z trzech takich placów w Dolinie Katmandu, które są wpisane na listę światowego dziedzictwa UNESCO. Na środku znajduje się pałac królewski, który przekształcony został w muzeum. Oprócz pałacu znajdziemy tu strzeliste pagody, posągi i wiele innych miejsc kultu zarówno hinduistów, jak i buddystów. Wstęp na plac kosztuje 750 NPR (25 PLN), bilet jest jednodniowy, jednak na podstawie biletu można wyrobić sobie przepustkę, upoważniającą do wchodzenia na teren placu na okres ważności wizy (wyrabia się w biurze na terenie Durbaru, potrzebne jedno zdjęcie paszportowe).
@@ -104,7 +104,7 @@ class Offer extends React.Component {
                 </div>
                
             </div >
-         </Router>
+         
 
         );
     }
