@@ -32,3 +32,6 @@ p.name{
     padding: 5px 10px;
     text-transform: uppercase;
 }
+input{
+    color: black;
+}

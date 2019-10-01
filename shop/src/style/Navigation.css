@@ -1,5 +1,6 @@
 .main{
     display: flex;
+    color: #00008B;
 }
 .link{
     width: 25%;
@@ -33,6 +34,11 @@ a{
 }
 .link li:hover{
     transform: translateX(20px);
+}
+a:visited 
+{
+    text-decoration: none; 
+    color:  #00008B;
 }
 .active{
     color: white;

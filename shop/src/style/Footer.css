@@ -2,8 +2,8 @@
     display: flex;
     justify-content: space-around;
     padding: 0 2vw;
-    color: grey;
-    font-weight: 400;
+    color:#00008B;
+    font-weight: 700;
 }
 .adress{
     display: inline-block;
