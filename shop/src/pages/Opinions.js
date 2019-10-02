@@ -50,7 +50,7 @@ class Opinions extends React.Component {
             stayDate: stayDate,
         }
         this.setState(prevState => ({
-            opinions: [...prevState.opinions, opinion]
+            opinions: [opinion, ...prevState.opinions]
         }))
         return true
     }

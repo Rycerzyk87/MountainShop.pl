@@ -8,6 +8,7 @@ class Contact extends React.Component {
         value: "",
         valueMail: ""
     }
+
     handleChange = (e) => {
         this.setState({
             value: e.target.value
@@ -20,7 +21,6 @@ class Contact extends React.Component {
     }
 
     handleSubmit = (e) => {
-        e.preventDefault();
         this.setState({
             value: "",
             valueMail: ""
