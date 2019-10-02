@@ -1,4 +1,6 @@
 .contact{
+    margin: 5% 0 0 10%;
+    
     text-align: left;
 }
 .contact h3{
@@ -18,4 +20,13 @@
     margin: 20px 0;
     line-height: 1.6;
     padding-left: 0;
+}
+.contact button{
+    margin-top: 2%;
+    padding: 5px 10px;
+    text-transform: uppercase;
+}
+.adress{
+    text-align: left;
+    margin-top: 5%;
 }

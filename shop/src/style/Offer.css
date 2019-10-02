@@ -37,3 +37,7 @@ select {
     transition: 2s;
 
 }
+.iframe{
+    width: 100%;
+    text-align: center;
+}
