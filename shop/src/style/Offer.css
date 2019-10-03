@@ -32,8 +32,8 @@ select {
     right: 5%;
     padding: 1%;
     cursor: pointer;
-    background-color: aliceblue;
-    border: 1px solid grey;
+    background-color:  #778899;
+    border: 2px solid red;
     transition: 2s;
 
 }

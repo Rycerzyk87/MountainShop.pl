@@ -6,8 +6,17 @@ import '../style/Contact.css'
 class Contact extends React.Component {
     state = {
         value: "",
-        valueMail: ""
+        valueMail: "",
+
+        // errors: {
+        //     value: true,
+        //     valueMail: true
+        // }
     }
+    // errorsMessages = {
+    //     value_incorrect: "Wiadomość musi zawierać przynajmniej 15 znaków",
+    //     valueMail_incorrect: "Adres mailowy musi zawierać znak '@'",
+    // }
 
     handleChange = (e) => {
         this.setState({
@@ -33,10 +42,15 @@ class Contact extends React.Component {
                 <div >
                     <div className="contact">
                         <form onSubmit={this.handleSubmit}>
-                            <h3>Napisz do nas!</h3>
-                            <input value={this.state.valueMail} onChange={this.handleChangeMail} placeholder="Twój adres mailowy"></input>
-
-                            <textarea value={this.state.value} onChange={this.handleChange} placeholder="Zostaw nam wiadomość"></textarea><br></br>
+                            <label htmlFor="valueMail">
+                                <h3>Napisz do nas!</h3>
+                                {/* {this.state.errors.valueMail && <p className="error">{this.errorsMessages.valueMail_incorrect}</p>} */}
+                                <input value={this.state.valueMail} onChange={this.handleChangeMail} placeholder="Twój adres mailowy"></input>
+                            </label>
+                            <label htmlFor="value">
+                                {/* {this.state.errors.value && <p className="error">{this.errorsMessages.value_incorrect}</p>} */}
+                                <textarea value={this.state.value} onChange={this.handleChange} placeholder="Zostaw nam wiadomość"></textarea><br></br>
+                            </label>
                             <button onSubmit={this.handleSubmit}>Wyślij</button>
                         </form>
                         <Prompt when={this.state.value} message="Wiadomość nie została wysłana, czy chcesz opuścić stronę?" />

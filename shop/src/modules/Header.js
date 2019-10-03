@@ -14,11 +14,11 @@ const Header = () => {
 
         <Router>
             <Switch>
-                <Route path="/" exact render={() => (<img src={header1} />)} />
-                <Route path="/ofert" render={() => (<img src={header2} />)} />
-                <Route path="/opinions" render={() => (<img src={header3} />)} />
-                <Route path="/products" render={() => (<img src={header4} />)} />
-                <Route path="/contact" render={() => (<img src={header5} />)} />
+                <Route path="/" exact render={() => (<img src={header1} className="header" />)} />
+                <Route path="/ofert" render={() => (<img src={header2} className="header" />)} />
+                <Route path="/opinions" render={() => (<img src={header3} className="header" />)} />
+                <Route path="/products" render={() => (<img src={header4} className="header" />)} />
+                <Route path="/contact" render={() => (<img src={header5} className="header" />)} />
             </Switch>
         </Router>
 
