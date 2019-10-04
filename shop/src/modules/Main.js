@@ -8,6 +8,7 @@ function Main() {
     return (
         <div>
             <Navigation />
+
         </div>
     );
 }

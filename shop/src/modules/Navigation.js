@@ -5,6 +5,8 @@ import Offer from '../pages/Offer';
 import Opinions from '../pages/Opinions';
 import Products from '../pages/Products';
 import Contact from '../pages/Contact';
+import Currency from './Currency';
+
 import { BrowserRouter as Router, NavLink, Route } from 'react-router-dom';
 
 import '../style/Navigation.css';
@@ -34,6 +36,7 @@ const Navigation = () => {
                     <ul>
                         {menuList}
                         <div className="clock"><Clock /></div>
+                        <div className="currebcy"><Currency /></div>
                     </ul>
                 </nav>
                 <section className="content">
