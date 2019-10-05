@@ -11,13 +11,20 @@ text-align: justify;
 margin-bottom: 10%;
 padding: 1%;
 }
+.descText{
+    padding: 1%;
+    background-color: lightgray;
+    border: 0.5px #00008B solid;
+    
+}
 .foto{
     overflow: hidden;
     image-orientation: initial;
     margin: 5% auto;
     width: 90%;
     height: 58vh;
-    background-color: blue;
+    background-color: lightgray;
+    
 }
 .select{
     font-size: 150%;
@@ -32,11 +39,9 @@ select {
     right: 5%;
     padding: 1%;
     cursor: pointer;
-    background-color:  #778899;
+    background-color: lightgray;
     border: 2px solid red;
-    transition: 2s;
-
-}
+    }
 .iframe{
     width: 100%;
     text-align: center;

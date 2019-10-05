@@ -12,7 +12,7 @@
 .links a {
     margin-left: 1vw;
     text-decoration: none;
-    color: blue;
+    color: lightgray;
 }
 a:link {
     color: blue;
