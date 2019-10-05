@@ -41,3 +41,8 @@
     font-size: 100%;
     font-weight: 600;
 }
+.correctMessage{
+    text-align: center;
+    color: greenyellow;
+    font-weight: 700;
+}

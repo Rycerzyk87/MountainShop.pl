@@ -7,6 +7,7 @@ class Contact extends React.Component {
     state = {
         value: "",
         valueMail: "",
+        correctMessage: "",
 
         errors: {
             value: false,
@@ -34,8 +35,9 @@ class Contact extends React.Component {
         const validation = this.formValidation();
         if (validation.correct) {
             this.setState({
-                value: "",
-                valueMail: "",
+                // value: "",
+                // valueMail: "",
+                correctMessage: "Wiadomość została wysłana poprawnie",
 
                 errors: {
                     value: false,
@@ -56,7 +58,7 @@ class Contact extends React.Component {
         let valueMail = false;
         let correct = false;
 
-        if (this.state.value.length > 15 && this.state.value.indexOf(' ') === -1) { value = true }
+        if (this.state.value.length > 14 && this.state.value.indexOf(' ') !== -1) { value = true }
         if (this.state.valueMail.indexOf('@') !== -1) { valueMail = true }
         if (value && valueMail) { correct = true }
         return ({
@@ -70,6 +72,7 @@ class Contact extends React.Component {
             <>
                 <div >
                     <div className="contact">
+                        <div className="correctMessage">{this.state.correctMessage}</div>
                         <form onSubmit={this.handleSubmit}>
                             <label htmlFor="valueMail">
                                 <h3>Napisz do nas!</h3>
