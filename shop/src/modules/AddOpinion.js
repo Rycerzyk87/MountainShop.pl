@@ -8,7 +8,7 @@ class AddOpinions extends React.Component {
         stayDate: "",
     }
     // sendOpinions() {
-    //     const targetUrl = `http://localhost:3002/opinions`;
+    //     const targetUrl = `http://localhost:3000/opinions`;
     //     const opinion = {
 
     //         text: this.state.text,

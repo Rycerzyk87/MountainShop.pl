@@ -52,7 +52,6 @@ class Offer extends React.Component {
             );
     };
     handleCloseClick = (event) => {
-        // event.preventDefault()
         this.setState({
             class: "none",
         })
@@ -61,9 +60,7 @@ class Offer extends React.Component {
         if (prevState.city !== this.state.city)
             this.getWeather()
     }
-    // componentWillUnmount() {
-    //     this.getWeather();
-    // }
+   
     render() {
         return (
        

@@ -29,14 +29,13 @@ class Opinions extends React.Component {
             method: 'GET',
         }).then(response => response.json())
             .then(data => {
-                console.log(data)
                 this.setState({
                     opinions: data,
                 })
             }
             );
     }
-    componentWillMount() {
+    componentDidMount() {
         this.getOpinions();
     }
     // componentWillUnmount() {
