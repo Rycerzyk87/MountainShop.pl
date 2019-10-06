@@ -7,13 +7,33 @@ class AddOpinions extends React.Component {
         note: "",
         stayDate: "",
     }
+    // sendOpinions() {
+    //     const targetUrl = `http://localhost:3002/opinions`;
+    //     const opinion = {
+
+    //         text: this.state.text,
+    //         name: this.state.name,
+    //         note: this.state.note,
+    //         stayDate: this.state.stayDate,
+    //     };
+
+    //     fetch(targetUrl, {
+    //         headers: {
+    //             'Accept': 'application/json',
+    //             'Content-Type': 'application/json'
+    //         },
+    //         method: 'POST',
+    //         body: JSON.stringify(opinion)
+    //     });
+    // }
     handleChange(event) {
         this.setState({
             [event.target.name]: event.target.value,
         });
     }
     handleClick = (event) => {
-        event.preventDefault()
+        event.preventDefault();
+        // this.sendOpinions();
         const { text, name, note, stayDate } = this.state;
         this.props.add(text, name, note, stayDate)
         this.setState({

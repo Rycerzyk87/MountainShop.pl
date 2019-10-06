@@ -29,21 +29,47 @@ class Contact extends React.Component {
             valueMail: e.target.value
         })
     }
+    // getMessages() {
+    //     const targetUrl = `http://localhost:3000/messages`;
+    //     fetch(targetUrl, {
+    //         method: 'GET',
+    //     }).then(response => response.json())
+    //         .then(data => console.log(data)
+    //         );
+    // }
+    sendMessages() {
+        const targetUrl = `http://localhost:3000/messages`;
+        const data = {
+            value: this.state.value,
+            valueMail: this.state.valueMail
+        };
+
+        fetch(targetUrl, {
+            headers: {
+                'Accept': 'application/json',
+                'Content-Type': 'application/json'
+            },
+            method: 'POST',
+            body: JSON.stringify(data)
+        });
+    }
 
     handleSubmit = (e) => {
         e.preventDefault();
         const validation = this.formValidation();
         if (validation.correct) {
+            this.sendMessages();
             this.setState({
-                // value: "",
-                // valueMail: "",
+                value: "",
+                valueMail: "",
                 correctMessage: "Wiadomość została wysłana poprawnie",
 
                 errors: {
                     value: false,
                     valueMail: false
                 }
-            })
+            });
+            // this.getMessages();
         } else {
             this.setState({
                 errors: {

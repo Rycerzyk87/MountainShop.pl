@@ -78,8 +78,6 @@ class Offer extends React.Component {
                     <div className="weather">
                         <p>Bieżące warunki pogodowe:</p>
                         <span>Tempertura : <b>{this.state.temp}</b> &#8451;  Ciśnienie atmosferyczne: <b>{this.state.press}</b> hPa Siła wiatru: <b>{this.state.wind}</b> m/s</span>
-                        <a href="http://localhost:3000/contact" className={this.state.class}><button className="close" onClick={this.handleCloseClick}>x</button><p>Chcesz więcej?</p><p>Napisz do nas.</p>
-                     </a>
                     </div> 
                     :
                     <div className="chooseCity">

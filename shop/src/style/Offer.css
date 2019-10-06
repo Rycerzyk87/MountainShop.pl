@@ -33,7 +33,7 @@ select {
         margin-left: 2vw;
         font-size: 150%;
 }
-.contactWithUs{
+/* .contactWithUs{
     position: fixed;
     bottom: 10%;
     right: 5%;
@@ -41,7 +41,7 @@ select {
     cursor: pointer;
     background-color: lightgray;
     border: 2px solid red;
-    }
+    } */
 .iframe{
     width: 100%;
     text-align: center;
