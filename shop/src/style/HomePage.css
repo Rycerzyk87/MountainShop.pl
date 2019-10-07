@@ -7,3 +7,14 @@
 .descText{
 text-align: justify;
 }
+
+.foto1{
+    background: url(../images/main1.jpg);
+}
+
+.foto2{
+    background: url(../images/main2.jpg);
+}
+.foto3{
+    background: url(../images/main3.jpg);
+}

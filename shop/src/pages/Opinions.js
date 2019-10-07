@@ -46,6 +46,7 @@ class Opinions extends React.Component {
             <div className="opinions">
                 <AddOpinions add={this.addOpition} />
                 {/* <AddOpinions /> */}
+
                 <OpinionsList opinions={this.state.opinions} />
 
             </div>

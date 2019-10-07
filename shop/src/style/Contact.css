@@ -46,3 +46,8 @@
     color: greenyellow;
     font-weight: 700;
 }
+.kont1{
+    background: url(../images/opinion1.jpg);
+    background-position: center;
+    background-size: cover;
+}
