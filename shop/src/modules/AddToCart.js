@@ -20,7 +20,7 @@ class AddToCart extends React.Component {
             <div className="addToCart">
                 <>
                     <button onClick={this.handleAddOrder}>Dodaj do koszyka</button>
-                    <span>{this.props.products.length}</span>
+                    {/* <span>{this.props.products.length}</span> */}
                 </>
             </div>
         );

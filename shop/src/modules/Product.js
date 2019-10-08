@@ -1,19 +1,20 @@
-import React from 'react';
-import AddToCart from './AddToCart';
+// import React from 'react';
 
-function Product(props) {
-    const { name, text, price, foto } = props.offer;
-    return (
-        <li className="product">
-            <div>
-                <p className="name"><span >{name}</span></p>
-                <p className="text">{text}</p>
-                <p className="price">Cena: <span >{price}</span></p>
-                {/* <p className="name">{foto}</p> */}
-                <AddToCart products={props.products} />
-            </div>
-        </li>
-    );
-}
 
-export default Product;
+// function Product(props) {
+//     const { name, text, price, foto, foto2 } = props.offer;
+//     return (
+//         <li className="product" value={price}>
+//             <div>
+//                 <p className="name"><span >{name}</span></p>
+//                 <div className="foto "><img src={foto} alt="product" /></div>
+//                 <p className="descText">{text}</p>
+//                 <div className="foto "><img src={foto2} alt="product" /></div>
+//                 <p className="price">Cena: <span >{price}</span></p>
+
+//             </div>
+//         </li>
+//     );
+// }
+
+// export default Product;

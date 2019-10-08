@@ -1,0 +1,9 @@
+.product{
+    margin: 10vh auto;
+    padding: 2%;
+    border: 1px solid red;
+}
+p.name{
+    font-size: 150%;
+    margin: 5% auto;
+}
