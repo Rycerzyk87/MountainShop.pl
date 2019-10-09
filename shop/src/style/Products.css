@@ -3,6 +3,7 @@
     padding: 2%;
     border: 1px solid red;
     list-style: none;
+    background-image: url({foto});
 }
 p.name{
     font-size: 150%;
