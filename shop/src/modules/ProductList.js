@@ -76,7 +76,7 @@ class ProductList extends React.Component {
 
 }
 
-export default ProductList;
+// export default ProductList;
 
 
 

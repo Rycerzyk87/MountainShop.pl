@@ -2,6 +2,7 @@
     margin: 10vh auto;
     padding: 2%;
     border: 1px solid red;
+    list-style: none;
 }
 p.name{
     font-size: 150%;
@@ -15,5 +16,6 @@ p.name{
     background: #00008B;
     font-size: 100%;
     color: white;
+   
 
 }
