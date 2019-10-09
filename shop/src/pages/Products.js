@@ -5,7 +5,7 @@ class Products extends React.Component {
     state = {
         offers: [],
         price: 0,
-        numberOfItems: 0,
+        numberOfItems: 0
 
     }
     getProducts = () => {
@@ -24,8 +24,7 @@ class Products extends React.Component {
     componentDidMount() {
         this.getProducts();
     }
-    basketminus = (prevState, props) => {
-        console.log(this.props.data)
+    basketminus = (prevState) => {
         this.setState(prevState => {
             return {
                 numberOfItems: prevState.numberOfItems - 1,
@@ -58,7 +57,7 @@ class Products extends React.Component {
                                     <div className={offer.name} ><img src={offer.foto} alt="product" /></div>
                                     <p className="descText">{offer.text}</p>
                                     <p className="price">Cena: <span >{offer.price}</span></p>
-                                    <button onClick={this.basketminus}>-</button>
+                                    <button disabled={this.state.numberOfItems <= 0 ? true : false} onClick={this.basketminus}>-</button>
                                     <button onClick={this.basketAdd} data={offer.price}>Dej do koszyka</button>
 
                                 </div>
