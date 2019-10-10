@@ -17,7 +17,6 @@ class App extends React.Component {
       <div className="App">
         <header>
           <Header />
-          <div className="logo"></div>
           <div className="headerbtns">
             <a href="https://pl-pl.facebook.com" className="fa fa-facebook" target="_blank" rel="noopener noreferrer"> </a>
             <a href="https://www.instagram.com" className="fa fa-instagram" target="_blank" rel="noopener noreferrer"> </a>
