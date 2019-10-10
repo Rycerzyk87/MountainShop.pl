@@ -7,3 +7,17 @@
   background-color: #778899
  
 }
+.headerbtns{
+  position: absolute;
+  top:5%;
+  right: 15%;
+}
+.logo{
+  position: absolute;
+  top:4.5%;
+  left: 12.5%;
+  width: 110px;
+  height: 110px;
+  background: url(../images/logo.jpg);
+  background-size: cover;
+}

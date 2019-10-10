@@ -36,9 +36,9 @@ class HomePage extends React.Component {
             <>
                 <div className="homes">
                     <h1>By endurance we conquer - lord Shackleton</h1>
-                    <div className="foto foto1"></div>
+                    <div className="foto foto1"><div className="logoMain"></div></div>
                     <p className="descText">{this.state.describeHomePage}</p>
-                    <div className="foto foto3"></div>
+                    <div className="foto foto3"><div className="logoMain"></div></div>
                 </div>
                 <div className="apiData">
                     <span>Nasze biuro to:</span>
@@ -47,7 +47,7 @@ class HomePage extends React.Component {
                     <p>Razem przeszliśmy wspólnie <b>{this.state.kilometers}</b> kilometrów</p>
                     <p>Zadowolonych klientów <b>{this.state.like}</b></p>
                 </div>
-                <div className="foto foto2"></div>
+                <div className="foto foto2"><div className="logoMain"></div></div>
             </>
         );
     }

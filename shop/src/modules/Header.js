@@ -19,6 +19,7 @@ const Header = () => {
                 <Route path="/opinions" render={() => (<img src={header3} className="header" alt="mountains3" />)} />
                 <Route path="/products" render={() => (<img src={header4} className="header" alt="mountains4" />)} />
                 <Route path="/contact" render={() => (<img src={header5} className="header" alt="mountains5s" />)} />
+
             </Switch>
         </Router>
 

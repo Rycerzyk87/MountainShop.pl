@@ -54,11 +54,11 @@ class Products extends React.Component {
                             <li className="product" key={offer.name} >
                                 <div>
                                     <p className="name"><span >{offer.name}</span></p>
-                                    <div className={offer.name} ><img src={offer.foto} alt="product" /></div>
+                                    {/* <div className={offer.name} ><img src={offer.foto} alt="product" /></div> */}
                                     <p className="descText">{offer.text}</p>
                                     <p className="price">Cena: <span >{offer.price}</span></p>
                                     <button disabled={this.state.numberOfItems <= 0 ? true : false} onClick={this.basketminus}>-</button>
-                                    <button onClick={this.basketAdd} data={offer.price}>Dej do koszyka</button>
+                                    <button onClick={this.basketAdd} >Dej do koszyka</button>
 
                                 </div>
                             </li>

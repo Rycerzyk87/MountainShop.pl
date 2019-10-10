@@ -3,6 +3,7 @@
     text-align: justify;
     padding-left: 15vw;
     
+    
 }
 .descText{
 text-align: justify;
@@ -17,4 +18,13 @@ text-align: justify;
 }
 .foto3{
     background: url(../images/main3.jpg);
+}
+.logoMain{
+    position: relative;
+    top:0;
+    left: 0;
+    width: 70px;
+    height: 70px;
+    background: url(../images/logo.jpg);
+    background-size: cover;
 }

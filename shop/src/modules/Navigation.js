@@ -37,6 +37,7 @@ const Navigation = () => {
                         {menuList}
                         <div className="clock"><Clock /></div>
                         <div className="currebcy"><Currency /></div>
+                        <div className="logoNav"></div>
                     </ul>
                 </nav>
                 <section className="content">
