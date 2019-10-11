@@ -23,10 +23,10 @@
 }
 .logo2{
   position: absolute;
-  top:65%;
+  top:60%;
   right:15%;
-  width: 235px;
-  height: 45px;
+  width: 435px;
+  height: 85px;
   background: url(../images/logo2.png);
   background-size: cover;
 }
