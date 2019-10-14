@@ -37,6 +37,8 @@ class Offer extends React.Component {
     getWeather = () => {
 
         const targetUrl = `https://api.openweathermap.org/data/2.5/weather?q=${this.state.city}&APPID=${this.state.key}`;
+        // const targetUrl = `https://api.openweathermap.org/data/2.5/weather?q=${this.state.city}&APPID=99c6651300a41971c7dd60f651d33589`;
+
         fetch(targetUrl, {
             method: 'GET',
         }).then(response => response.json())

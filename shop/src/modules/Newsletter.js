@@ -15,7 +15,7 @@ class Newsletter extends React.Component {
             this.setState({
                 time: -80 + "px"
             })
-        }, 10000);
+        }, 20000);
     }
     handleChangeMail = (e) => {
         this.setState({
