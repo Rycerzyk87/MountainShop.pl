@@ -15,8 +15,8 @@ class Contact extends React.Component {
         }
     }
     errorsMessages = {
-        value_incorrect: "Wiadomość musi zawierać przynajmniej 15 znaków",
-        valueMail_incorrect: "Adres mailowy musi zawierać znak '@'",
+        value_incorrect: "Wiadomość musi zawierać minimum 15 znaków",
+        valueMail_incorrect: "Adres mailowy musi zawierać znak '@' ",
     }
 
     handleChange = (e) => {
