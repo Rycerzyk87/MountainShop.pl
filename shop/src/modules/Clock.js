@@ -63,9 +63,4 @@ function ClockDateDay({ date }) {
     return <>{date.getDate().toString().padStart(2, '0')}</>;
 }
 
-
-// function Clock() {
-//     return <Watch />;
-// }
-
 export default Clock;

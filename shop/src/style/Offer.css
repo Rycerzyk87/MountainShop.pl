@@ -33,7 +33,9 @@ padding: 1%;
 }
 select {
         margin-left: 2vw;
+        padding:  0 40px;
         font-size: 150%;
+        background-color: lightgray;
 }
 .contactWithUs{
     position: fixed;

@@ -62,7 +62,7 @@ class Contact extends React.Component {
             this.setState({
                 value: "",
                 valueMail: "",
-                correctMessage: "Wiadomość została wysłana poprawnie",
+                correctMessage: "Wiadomość została wysłana poprawnie!",
 
                 errors: {
                     value: false,
@@ -111,7 +111,7 @@ class Contact extends React.Component {
                             </label>
                             <button onSubmit={this.handleSubmit}>Wyślij</button>
                         </form>
-                        <Prompt when={this.state.value} message="Wiadomość nie została wysłana, czy chcesz opuścić stronę?" />
+                        <Prompt when={this.state.value} message="Wiadomość nie została wysłana, czy chcesz opuścić stronę?!" />
                     </div>
 
                     <div className="adress">
