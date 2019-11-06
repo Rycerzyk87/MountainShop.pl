@@ -26,6 +26,7 @@ class AddOpinions extends React.Component {
     //         body: JSON.stringify(opinion)
     //     });
     // }
+    // not working :(
     handleChange(event) {
         this.setState({
             [event.target.name]: event.target.value,

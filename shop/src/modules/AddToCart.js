@@ -11,16 +11,13 @@ class AddToCart extends React.Component {
             price: props.price,
         }]
         console.log(added);
-        // this.setState({
-        //     products: added
-        // })
+
     }
     render() {
         return (
             <div className="addToCart">
                 <>
                     <button onClick={this.handleAddOrder}>Dodaj do koszyka</button>
-                    {/* <span>{this.props.products.length}</span> */}
                 </>
             </div>
         );

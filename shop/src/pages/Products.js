@@ -28,7 +28,6 @@ class Products extends React.Component {
         this.setState(prevState => {
             return {
                 numberOfItems: prevState.numberOfItems - 1,
-                // price: Number(this.value)
             }
 
         })
