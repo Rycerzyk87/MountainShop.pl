@@ -37,7 +37,6 @@ class Products extends React.Component {
         this.setState(prevState => {
             return {
                 numberOfItems: prevState.numberOfItems + 1,
-                // price: Number(this.value)
             }
 
         })
@@ -53,7 +52,6 @@ class Products extends React.Component {
                             <li className="product" key={offer.name} >
                                 <div>
                                     <p className="name"><span >{offer.name}</span></p>
-                                    {/* <div className={offer.name} ><img src={offer.foto} alt="product" /></div> */}
                                     <p className="descText">{offer.text}</p>
                                     <p className="price">Cena: <span >{offer.price}</span></p>
                                     <button disabled={this.state.numberOfItems <= 0 ? true : false} onClick={this.basketminus}>-</button>

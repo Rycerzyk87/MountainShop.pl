@@ -2,6 +2,7 @@ import React from 'react';
 // import Product from './Product';
 
 // function Product(props) {
+
 //     const { name, text, price, foto, foto2 } = props.offer;
 //     return (
 //         <li className="product">
@@ -23,6 +24,7 @@ class Product extends React.Component {
         price: 0,
         numberOfItems: 0,
     }
+
     // basketAdd(prevState) {
     //     this.setState{
     //         return {numberOfItems: numberOfItems.count + 1}
@@ -54,25 +56,23 @@ class Product extends React.Component {
     }
 }
 
-// export default Product;
+// class ProductList extends React.Component {
+state = {
+    numberOfItems: 0,
+}
 
-class ProductList extends React.Component {
-    state = {
-        numberOfItems: 0,
-    }
+render(props) {
+    const productList = this.props.offers.map(offer => <Product key={offer.name} offer={offer} />)
+    return (
+        <div className="products">
+            <h1>Nasze produkty:</h1>
+            <ul>
+                {productList}
 
-    render(props) {
-        const productList = this.props.offers.map(offer => <Product key={offer.name} offer={offer} />)
-        return (
-            <div className="products">
-                <h1>Nasze produkty:</h1>
-                <ul>
-                    {productList}
-
-                </ul>
-            </div>
-        );
-    }
+            </ul>
+        </div>
+    );
+}
 
 }
 
