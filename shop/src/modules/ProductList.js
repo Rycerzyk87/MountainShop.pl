@@ -1,23 +1,4 @@
 import React from 'react';
-// import Product from './Product';
-
-// function Product(props) {
-
-//     const { name, text, price, foto, foto2 } = props.offer;
-//     return (
-//         <li className="product">
-//             <div>
-//                 <p className="name"><span >{name}</span></p>
-//                 <div className="foto "><img src={foto} alt="product" /></div>
-//                 <p className="descText">{text}</p>
-//                 <div className="foto "><img src={foto2} alt="product" /></div>
-//                 <p className="price">Cena: <span >{price}</span></p>
-//                 <button onClick={this.props.addTB}>Dej do koszyka</button>
-
-//             </div>
-//         </li>
-//     );
-// }
 
 class Product extends React.Component {
     state = {
@@ -25,11 +6,7 @@ class Product extends React.Component {
         numberOfItems: 0,
     }
 
-    // basketAdd(prevState) {
-    //     this.setState{
-    //         return {numberOfItems: numberOfItems.count + 1}
-    //     }
-    // }
+
     basketAdd = (prevState) => {
         this.setState(prevState => {
             return { numberOfItems: prevState.numberOfItems + 1 }
@@ -56,7 +33,6 @@ class Product extends React.Component {
     }
 }
 
-// class ProductList extends React.Component {
 state = {
     numberOfItems: 0,
 }
