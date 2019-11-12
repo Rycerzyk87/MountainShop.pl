@@ -40,12 +40,12 @@ class Currency extends Component {
         return (
             <div className="currency">
                 <h3>Kursy walut:</h3>
-                <p>Dolar <span className="symbol">&#36;</span>: <span>{dollar} PLN</span></p>
-                <p>Euro <span className="symbol">&#8364;</span>: <span>{euro} PLN</span></p>
-                <p>Rupia <span className="symbol">&#8381;</span>: <span>{rupia} PLN</span></p>
-                <p>Rubel <span className="symbol">&#8381;</span>: <span>{rubel} PLN</span></p>
-                <p>Juan <span className="symbol">&#20803;</span>: <span>{yuan} PLN</span></p>
-                <p>Jen <span className="symbol">&#165;</span>: <span>{jen} PLN</span></p>
+                <p>Dolar <span className="symbol">&#36; </span>: <span> {dollar} PLN</span></p>
+                <p>Euro <span className="symbol">&#8364; </span>: <span> {euro} PLN</span></p>
+                <p>Rupia <span className="symbol">&#8381; </span>: <span> {rupia} PLN</span></p>
+                <p>Rubel <span className="symbol">&#8381; </span>: <span> {rubel} PLN</span></p>
+                <p>Juan <span className="symbol">&#20803; </span>: <span> {yuan} PLN</span></p>
+                <p>Jen <span className="symbol">&#165; </span>: <span> {jen} PLN</span></p>
             </div>
         );
     }

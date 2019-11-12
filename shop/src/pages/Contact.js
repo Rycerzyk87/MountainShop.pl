@@ -101,7 +101,7 @@ class Contact extends React.Component {
                         <div className="correctMessage">{this.state.correctMessage}</div>
                         <form onSubmit={this.handleSubmit}>
                             <label htmlFor="valueMail">
-                                <h3>Napisz do nas!</h3>
+                                <h3>Napisz do nas!!!</h3>
                                 {this.state.errors.valueMail && <p className="error">{this.errorsMessages.valueMail_incorrect}</p>}
                                 <input value={this.state.valueMail} onChange={this.handleChangeMail} placeholder="Twój adres mailowy"></input>
                             </label>
